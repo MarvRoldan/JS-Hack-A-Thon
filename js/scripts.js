@@ -43,3 +43,8 @@ var century = ( year ) => {
 		return `${Math.ceil( year/100 ) }st century`
 };
 
+// -- ReverseAndNot --
+// .split(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+// .reverse(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+// .join(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+var reverseAndNot = ( i ) => +( i.toString().split( "" ).reverse().join( "" ) + i );
