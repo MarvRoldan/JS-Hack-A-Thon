@@ -48,3 +48,10 @@ var century = ( year ) => {
 // .reverse(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 // .join(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 var reverseAndNot = ( i ) => +( i.toString().split( "" ).reverse().join( "" ) + i );
+
+// -- Apples and Bananas --
+// .replace(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+// .this: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+String.prototype.vreplace = function(vowel) {
+    return this.replace(/[aeiou]/g, vowel);
+}
